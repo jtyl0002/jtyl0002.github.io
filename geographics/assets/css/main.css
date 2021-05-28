@@ -103,7 +103,7 @@ font-size: 10vh;
 font-family:cursive;
 margin-top: 150px;
 pointer-events: none;
-text-shadow: 20px 500px 80px #FF0000;
+text-shadow: 25px 25px 80px #FF0000;
   }
 
   .quote {
