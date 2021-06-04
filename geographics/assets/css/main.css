@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
+	cursor: not-allowed, auto;
 }
 
 a {
@@ -19,9 +20,24 @@ a {
   .container {
 	display: flex;
 	flex-wrap: wrap;
-
   }
 
+  .beacon {
+	animation: blinker 1s step-end infinite;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(255, 0, 0);
+  position: relative;
+  top: -900px;
+  left: 600px;
+  }
+  
+  @keyframes beacon {
+	50% {
+	  opacity: 0;
+	}
+  }
 
 .img{ 
 	width: 500px;
@@ -43,12 +59,191 @@ a {
 	  line-height: 10vh;
   }
 
+  .dots {
+	  z-index: 2;
+	position: relative;
+  top: -60vh;
+  right: 202px;
+  width: 100%;
+  pointer-events: none;
+  color: rgb(0, 255, 21)
+   }
+
+   .painting {
+	width: 1000px;
+}
+
+.man img {
+  width: 100%;
+  position: relative;
+  top: -70vh;
+}
+
+.barcode img {
+  z-index: 7;
+  position: relative;
+  width: 300px;
+  height: 353px;
+  top: -120vh;
+}
+
+.hit-area {
+  z-index: 5;
+  top: -222vh;
+  right: -23vh;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.hitbox {
+  width: 100px;
+  height: 100px;
+  float:left;
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 25%;
+  top: 40%;
+  background-color: white;
+  pointer-events: none;
+}
+
+.eye + .eye {
+  left: 55%;
+}
+
+.pupil {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  transition: all .5s ease;
+}
+
+#c-3:hover ~ .eye .pupil {
+  background-color: red;
+}
+
+#a-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(60deg) translate(-30px);
+}
+
+#a-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(80deg) translate(-30px);
+}
+
+#a-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(90deg) translate(-30px);
+}
+
+#a-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(100deg) translate(-30px);
+}
+
+#a-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(120deg) translate(-30px);
+}
+
+#b-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(50deg) translate(-25px);
+}
+
+#b-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(70deg) translate(-25px);
+}
+
+#b-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(90deg) translate(-25px);
+}
+
+#b-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(110deg) translate(-25px);
+}
+
+#b-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(130deg) translate(-25px);
+}
+
+#c-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(-25px);
+}
+
+#c-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(-10px);
+}
+
+#c-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(20px);
+}
+
+#c-3:hover ~ .eye:nth-of-type(2n+1) > .pupil {
+  -webkit-transform: rotate(0deg) translate(-20px);
+}
+
+#c-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(10px);
+}
+
+#c-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(0deg) translate(25px);
+}
+
+#d-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-50deg) translate(-25px);
+}
+
+#d-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-70deg) translate(-25px);
+}
+
+#d-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-90deg) translate(-25px);
+}
+
+#d-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(-110deg) translate(-25px);
+}
+
+#d-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-130deg) translate(-25px);
+}
+
+#e-1:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-40deg) translate(-30px);
+}
+
+#e-2:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-60deg) translate(-30px);
+}
+
+#e-3:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-80deg) translate(-30px);
+}
+
+#e-4:hover ~.eye > .pupil {
+  -webkit-transform: rotate(-100deg) translate(-30px);
+}
+
+#e-5:hover ~ .eye > .pupil {
+  -webkit-transform: rotate(-120deg) translate(-30px);
+}
+
   .para {
 	  z-index: 2;
 	  position: relative;
 	  text-indent: 50px;
-	  margin-top: -90vh;
-	  margin-bottom: -120px;
+	  top: -160vh;
 	  font-size: 24px;
   }
 
@@ -81,6 +276,14 @@ a {
 	font-size: 10vh;
   }
 
+  .outgoing img {
+	  padding: 50px;
+	  width: 100%;
+	  cursor: progress;
+  } 
+
+
+
   .right strong {
 	  font-family: Verdana, Geneva, Tahoma, sans-serif;
 	  font-weight: 700;
@@ -98,12 +301,26 @@ a {
 	  margin-top: 100px;
   }
 
+  .watched {
+	  color: red;
+	  margin-top: 80px;
+	  padding: 2px;
+	  font-size: 20px;
+	  
+  }
+
+  .watched em {
+	  color: blue;
+	  font-style: underline;
+	  cursor: not-allowed;
+  }
+
   .xxxxx {
 font-size: 10vh;
 font-family:cursive;
-margin-top: 150px;
+margin-top: 20px;
 pointer-events: none;
-text-shadow: 200px 200px 800px #FF0000;
+text-shadow: 2px 2px 6px #00ff15;
   }
 
   .quote {
@@ -111,7 +328,8 @@ text-shadow: 200px 200px 800px #FF0000;
 	font-size: 4vh;
 	  padding: 40px;
   }
-  
+
+
   .symbol {
 position: fixed;
 width: 150px;
@@ -139,4 +357,36 @@ Bottom: 0;
 
   video {
 	  width: 100%
+  }
+
+
+  .buybook {
+	float:left;
+	width: 50%;
+	text-align: center;
+	margin-top: 3rem;
+	color: red;
+	animation: blinker 1s step-end infinite;
+  }
+  
+  @keyframes blinker {
+	50% {
+	  opacity: 0;
+	}
+  }
+
+  .smile {
+	  font-size: 24px;
+	  position: fixed;
+	  top: 0;
+	  text-align: center;
+	  width: 100%;
+	  border: seashell;
+	  border-width: 1px;
+	  color: seashell;
+	  font-family: Arial, Helvetica, sans-serif;
+	  z-index: 6;
+	  opacity: 50%;
+	  text-shadow: 0px 0px 2px rgb(0, 0, 0);
+
   }
