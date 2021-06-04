@@ -277,8 +277,10 @@ a {
   }
 
   .outgoing img {
-	  padding: 50px;
-	  width: 100%;
+	  position: relative;
+	  top: -150vh;
+	  padding: 20px;
+	  width: 75%;
 	  cursor: progress;
   } 
 
@@ -320,7 +322,7 @@ font-size: 10vh;
 font-family:cursive;
 margin-top: 20px;
 pointer-events: none;
-text-shadow: 2px 2px 6px #00ff15;
+text-shadow: 2px 2px 6px #00ff15; 
   }
 
   .quote {
@@ -328,6 +330,27 @@ text-shadow: 2px 2px 6px #00ff15;
 	font-size: 4vh;
 	  padding: 40px;
   }
+
+  .s {
+	  width: 200px;
+	  opacity:20%;
+  }
+
+  .s1 img {
+	  position: relative;
+	  top: -105vh;
+	  left: 15vh;
+	  width: 100%;
+	  color: coral;
+  }
+  .s2 img {
+	position: relative;
+	top: -100vh;
+	left: 60vh;
+	width: 75%;
+	color: coral;
+}
+
 
 
   .symbol {
@@ -360,12 +383,15 @@ Bottom: 0;
   }
 
 
-  .buybook {
+  .buybook  a {
 	float:left;
-	width: 50%;
+	width: 100%;
+	background-color: rgb(120, 170, 226);
+	border-radius: 200px;
+	padding: 50px;
 	text-align: center;
 	margin-top: 3rem;
-	color: red;
+	color: blue;
 	animation: blinker 1s step-end infinite;
   }
   
