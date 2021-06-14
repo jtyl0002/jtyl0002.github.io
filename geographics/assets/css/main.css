@@ -1,6 +1,6 @@
 body {
 	overflow:hidden;
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 32px;
 	cursor: not-allowed, auto;
 }
@@ -23,6 +23,12 @@ a {
 	flex-wrap: wrap;
   }
 
+  .grid img{
+	  z-index: 0;
+	  width: 100%;
+	  padding: none;
+  }
+
   .beacon {
 	animation: blinker 1s step-end infinite;
   width: 40px;
@@ -30,7 +36,8 @@ a {
   border-radius: 100%;
   background-color: rgb(255, 0, 0);
   position: relative;
-  top: -900px;
+  margin-top: -175px;
+  margin-bottom: 175px;
   left: 600px;
   }
   
@@ -90,9 +97,12 @@ color: rgb(0, 255, 21)
 .about {
 	width: 100%;
 	font-size: 124px;
+	font-family: Arial, Helvetica, sans-serif;
 	border-left: 5px solid rgb(255, 255, 255);
 	color: chartreuse;
 	cursor:pointer;
+	margin-top: -1250px;
+	z-index: 1;
 }
 
 .testcard {
@@ -102,15 +112,23 @@ color: rgb(0, 255, 21)
 }
 
 .lidar {
-	margin-top: -75px;
+	margin-top: -95px;
 }
+
+.tsla {
+	margin-top:-100px
+}
+
+
 
 .para1 {
 	box-shadow: inset 0 0 40px #000000;
 	color: white;
 	  padding: 20px;
 	  border-radius: 5px;
-	  font-size: 24px;
+	  font-size: 26px;
+	  font-family: 'Orbitron', sans-serif;
+	  line-height: 1.4;
 	  display: flex;
 	  flex-wrap: wrap;
 	  position: relative;
@@ -118,13 +136,59 @@ color: rgb(0, 255, 21)
 	  display: none;
   }
 
-  .para2 {
+  .blurb {
 	box-shadow: inset 0 0 40px #000000;
 	color: white;
-	  padding: 20px;
-	  border-radius: 5px;
-	  font-size: 24px;
+	font-family: 'Orbitron', sans-serif;
+	padding: 20px;
+	line-height: 1.4;
+	border-radius: 5px;
+	font-size: 24px;
+	margin-top: 75px;
   }
+
+  .blurb a {
+	  color: lime;
+	  font-style: italic;
+  }
+
+  .heat img{
+	margin-top: 75px;
+	filter: blur(21px);
+	filter: blur(32px);
+	transition: 1s;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	}
+  
+	.heat img:hover {
+	filter: blur(0px);
+	}
+
+	.heatgrid img {
+	width: 60%;
+	opacity: 15%;
+	margin-top: -200px;
+	pointer-events: none;
+	}
+	
+
+	.track img{
+		margin-top: 75px;
+	filter: blur(21px);
+	filter: blur(32px);
+	transition: 1s;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	}
+
+	.track img:hover {
+	filter: blur(0px);
+	}
 
   .two {
 	box-shadow: inset 0 0 40px #000000;
@@ -139,7 +203,7 @@ color: rgb(0, 255, 21)
 
   .array img{
 	position: relative;
-  top: 90px;
+  margin-top: -275px;
   right: 202px;
   width: 100%;
   pointer-events: none;
@@ -162,13 +226,13 @@ color: rgb(0, 255, 21)
 
 	.title em {
 	font-style: italic;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-size: 10vh;
   }
 
   .chapters {
-	  font-family: Arial, Helvetica, sans-serif;
-	  margin-top: 20vh;
+	font-family: 'Orbitron', sans-serif;	
+	margin-top: 20vh;
 	  margin-bottom: 5vh;
 	  text-align: center;
 	  text-decoration: underline solid white;
@@ -176,6 +240,7 @@ color: rgb(0, 255, 21)
   }
 
   .outgoing  {
+	  
 	  display: flex;
 	  flex-wrap: wrap;
 	  position: relative;
@@ -183,44 +248,52 @@ color: rgb(0, 255, 21)
 	  justify-content: space-around;
 	  } 
 .chapter img {
-	width: 200px;
+	width: 300px;
 	padding: 10px;
 	background-color: transparent;
+	transition: 1s;
 }
+
   .laneus :hover {
 	background-color: rgb(252, 153, 255);
-	transition: 1s;
 	border-radius: 100%;
   }
   .unicode :hover {
 	background-color: rgb(79, 98, 184);
-	transition: 1s;
 	border-radius: 100%;
 	  }
-	  .lisa :hover {
-		background-color: rgb(186, 140, 207);
-		transition: 1s;
-		border-radius: 100%;
-		  }
+	.lisa :hover {
+	background-color: rgb(186, 140, 207);
+	border-radius: 100%;
+		}
 	.amelia :hover {
 	background-color: rgb(138, 138, 138);
-	transition: 1s;
 	border-radius: 100%;
 		}
 	.kirrily :hover {
 	background-color: rgb(187, 218, 196);
-	transition: 1s;
 	border-radius: 100%;
 		}
 	.maddy :hover {
 		background-color: rgb(112, 50, 228);
-		transition: 1s;
 		border-radius: 100%;
 		}
+	.elena :hover {
+		background-color: rgb(245, 106, 13);
+		border-radius: 100%;
+		}
+	.steph :hover {
+		background-color: rgb(13, 245, 63);
+		border-radius: 100%;
+		}
+		.juny :hover {
+			background-color: rgb(125, 245, 13);
+			border-radius: 100%;
+			}
 
   .right strong {
-	  font-family: Verdana, Geneva, Tahoma, sans-serif;
-	  font-weight: 700;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 700;
   }
   .right {
 	width: 50%;
@@ -251,42 +324,57 @@ color: rgb(0, 255, 21)
 
   .xxxxx {
 font-size: 10vh;
-font-family:cursive;
+font-family: 'Orbitron', sans-serif;
 margin-top: 20px;
 pointer-events: none;
 text-shadow: 2px 2px 6px #00ff15; 
   }
 
-  .quote {
-	  font-family:Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 4vh;
-	  padding: 40px;
+  .face img {
+	  width: 100%;
+	  position: relative;
+	  right: -300px;
+	  opacity: 20%;
+	  pointer-events: none;
   }
 
-  .s {
-	  width: 200px;
-	  opacity:20%;
-  }
+
+
+
+.s1 {
+	margin-top: -1100px;
+	margin-left: 90px;
+}
 
   .s1 img {
 	  position: relative;
-	  top: -105vh;
-	  left: 15vh;
-	  width: 100%;
-	  color: coral;
+	  width: 170px;
+	  color: rgb(80, 255, 211);
 	  mix-blend-mode: exclusion;
-	  z-index: 3;
   }
-  .s2 img {
-	position: relative;
-	filter:sepia();
-	top: -100vh;
-	left: 60vh;
-	width: 75%;
-	color: coral;
-	mix-blend-mode: exclusion;
-	z-index: 3;
+
+  .s2 {
+	margin-top: -600px;
+	margin-left: 450px;
 }
+
+  .s2 img {
+	  position: relative;
+	  width: 150px;
+	  color: rgb(80, 255, 211);
+	  mix-blend-mode: exclusion;
+  }
+  .s3 {
+	margin-top: -400px;
+	margin-left: 80px;
+}
+
+  .s3 img {
+	  position: relative;
+	  width: 200px;
+	  color: rgb(0, 0, 0);
+	  mix-blend-mode: exclusion;
+  }
 
 
 
@@ -325,9 +413,33 @@ Bottom: 0;
 	  width: 100%
   }
 
+  .eye  {
+	  width: 40%;
+	  position: relative;
+	  margin-top: 75px;
+	  right: -50px;
+	  fill:rgb(221, 220, 211);
+	  transition: 2s;
+  }
+
+  .eye:hover {
+	  fill: gold;	  
+  }
+
+  .mandetect img {
+	width: 40%;
+	opacity: 15%;
+	margin-top: -200px;
+	margin-left: 400px;
+	pointer-events: none;
+  }
+
+
+
 
   .buybook  a {
 	float:left;
+	padding-bottom: 100px;
 	width: 100%;
 	background-color: rgb(120, 170, 226);
 	border-radius: 200px;
@@ -353,7 +465,7 @@ Bottom: 0;
 	  border: seashell;
 	  border-width: 1px;
 	  color: seashell;
-	  font-family: Arial, Helvetica, sans-serif;
+	  font-family: 'Orbitron', sans-serif;
 	  z-index: 6;
 	  opacity: 50%;
 	  text-shadow: 0px 0px 2px rgb(0, 0, 0);
@@ -398,4 +510,5 @@ Bottom: 0;
  transform: translateX(-100%); 
  }
 }
+
 
