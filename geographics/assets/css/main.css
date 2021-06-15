@@ -688,4 +688,17 @@ Bottom: 0;
  }
 }
 
+.subtitle {
+	position: relative;
+	margin-bottom: -30vh;
+	margin-top: 16vh;
+	width:33%;
+	text-align: left;
+	font-size: 48px;
+	line-height: .9;
+}
+
+.subtitle em{
+	color: red;
+}
 
