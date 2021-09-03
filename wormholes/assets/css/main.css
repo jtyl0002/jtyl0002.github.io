@@ -1,0 +1,286 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+@font-face {
+  font-family: 'start';
+  src: url(fonts/PressStart2P-Regular.otf);
+}
+
+@font-face {
+  font-family: 'script';
+  src: url(fonts/DancingScript-VariableFont_wght.otf);
+}
+
+a {
+	color:red;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+  .container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .cell {
+	width: 33.33vw;
+	height: 33.333vw;
+  }
+  
+  .cell.large {
+	  width: 66.66vw;
+  }
+  
+  .cell.extralarge {
+	  width: 66.66vw;
+  }
+  
+  .cell.red {
+	background-color: red;
+  }
+  
+  .content {
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	height: 100%;
+	padding: 5px;
+  }
+
+  .bee {
+	  fill: white;
+	  background-color: rgb(223, 182, 78);
+  }
+
+  .bee img {
+    margin-top: 2vw;
+  }
+
+  .honeycomb img {
+    margin-top: 2vw;
+    margin-left: 2vw;
+  }
+
+  .flower img {
+    margin-top: 2vw;
+    margin-left: 1.5vw;
+  }
+
+  .flower {
+	background-color: rgb(223, 182, 78);
+  }
+
+  .flower img{
+	  width:90%;
+  }
+
+  .honeycomb {
+	background-color: rgb(223, 182, 78);  
+  }
+
+  .honeycomb img {
+	width:80%;
+  }
+  
+  img {
+    width: 100%;
+    padding: 20px;
+    }
+    
+  .fact {
+    font-size: 3.5vw;
+    border-left: solid 1vw black;
+    font-weight: 700;
+    padding: 2vw;
+    }
+
+    .flowerfact {
+      font-size: 3.1vw;
+      border-left: dashed 1vw black;
+      font-weight: 700;
+      padding: 2vw;
+      line-height: 1.1;
+      }
+
+   .long{
+      font-size: 2.2vw;
+      border-left: dashed black 1vw;
+      line-height: 1.6;
+      color: white;
+      font-weight: 900;
+      padding: 2vw;
+      text-align: left;
+      text-transform: uppercase;
+      overflow: scroll;
+      }
+
+    .long em { 
+      color: black;
+      font-family: 'start';
+      font-size: 7vw;
+    }
+
+  .header {
+      text-align: center;
+      margin-top: 12vw;
+      z-index: 1;
+    }
+
+  .beehead img{
+    position: relative;
+    align-items: center;
+    padding: 2vw;
+    opacity: 1;
+    z-index: 2;
+    }
+
+  div.info {
+    font-family: 'start';
+    font-size: 1.3vw;
+    line-height: 1.8;
+    padding: 1vw;
+    overflow: scroll;
+    }
+
+  em {
+    color:  rgb(223, 182, 78);
+    }
+
+    .info a {
+      color: white;
+      background-color: rgb(224, 136, 14);
+      font-size: 1vw;
+      padding-left: 1vw;
+      padding-top: 1vw;
+      padding-right: 1vw;
+
+      text-decoration: none;
+    }
+
+  .sun {
+    background-color: rgb(231, 158, 231);
+    }
+
+  .butterfly {
+      background-color: rgb(231, 158, 231);
+    }
+
+  .leaf {
+    background-color: rgb(231, 158, 231);
+    }
+    
+  .black {
+    background-color: rgb(101, 101, 101);
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    }
+
+  .meteor {
+    background-color: black;
+    }
+
+  .star {
+    background-color:black;
+    }
+
+    .star a {
+      cursor: crosshair;
+
+    }
+
+  .moon {
+    background-color: black;
+    }
+
+  .beehead {
+    font-family: 'start';
+    font-size: 1vw;
+    text-align: center;
+    padding-top: 1vw;
+    }
+
+    .chaosimage {
+      font-family: 'start';
+      font-size: 1vw;
+      text-align: center;
+      padding-top: 2vw;
+      line-height: 1.6;
+    }
+
+    .chaosimage img {
+      margin-top: 3vw;
+    }
+
+  .beehead img {
+    margin-top: -0.2vw;
+    }
+
+    .moon img {
+      margin-top: -1vw;
+      margin-left: 0vw;
+    }
+
+    .meteor img {
+      margin-top: 2vw;
+      margin-left: 0vw;
+    }
+
+    .coords {
+      color: white;
+      font-family: 'start';
+      font-size: 1.2vw ;
+      padding: 3.5vw;
+      line-height: 2.2;
+      width: 100%;
+      height: 100%;
+      border: solid white 0.1vw;
+      border-radius: 100%;
+      text-align: center;
+      }
+
+  .eye img {
+    margin-top: 3vw;
+  }
+
+  .poem {
+    font-family: 'script';
+    overflow: scroll;
+    color: rgb(231, 158, 231);
+    font-size: 2.6vw;
+    padding: 3vw;
+    border-top: solid white 3vw;
+    line-height: 1.6;
+  }
+
+  .poem em {
+  font-size: 8vw;
+  color: rgb(231, 158, 231);
+  line-height: 1;
+}
+
+.power {
+  fill: rgb(231, 158, 231);
+}
+
+.beegif {
+  width: 100%;
+  cursor: pointer;
+}    
+
+.orange {
+  background-color: rgb(224, 136, 14);
+}
+
+.flight img{
+  margin-top: 3vw;
+}
+
+.pollen img {
+  padding: 3vw;
+  
+}
+
+  
