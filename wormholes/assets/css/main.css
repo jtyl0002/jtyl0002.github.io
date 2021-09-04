@@ -263,6 +263,7 @@ a {
 
 .power {
   fill: rgb(231, 158, 231);
+  padding: none;
 }
 
 .beegif {
