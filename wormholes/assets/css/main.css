@@ -261,10 +261,9 @@ a {
   line-height: 1;
 }
 
-.power img{
+.power {
   fill: rgb(231, 158, 231);
-  padding: none;
-  width: 120%;;
+ 
 }
 
 .beegif {
