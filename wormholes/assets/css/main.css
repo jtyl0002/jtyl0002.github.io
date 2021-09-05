@@ -328,10 +328,10 @@ a {
     font-family: start;
     font-size: 5vw;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .left {
-    display: flex;
     height: 40vw;
     width: 50vw;
     background-color: black;
@@ -343,7 +343,6 @@ a {
   }
 
   .right {
-    display: flex;
     height: 40 vw;
     width: 50vw;
     background-color: white;
