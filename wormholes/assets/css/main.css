@@ -367,10 +367,10 @@ a {
 
   .tryagain {
     font-family: start;
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
     padding: 5vw;
-    margin-top: 10vw;
+    margin-top: 5vw;
     background-color: palegreen;
     border-radius: 25%;
     width: 10vw;
