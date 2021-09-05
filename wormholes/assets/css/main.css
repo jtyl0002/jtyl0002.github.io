@@ -328,6 +328,7 @@ a {
     padding-top: 5vw;
     font-family: start;
     font-size: 5vw;
+    display: inline;
     text-align: center;
   }
 
