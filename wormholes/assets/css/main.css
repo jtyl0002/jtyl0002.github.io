@@ -315,6 +315,7 @@ a {
 
 .combfact {
   color: rgb(212, 94, 94);
+  overflow: scroll;
   font-size: 1vw;
   border-left: dashed 1vw rgb(212, 94, 94);
   font-weight: 700;
