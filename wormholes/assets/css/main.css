@@ -357,3 +357,20 @@ a {
     line-height: 40vw;
   }
 
+  .boring {
+    font-family: start;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 50vw;
+  }
+
+  .tryagain {
+    font-family: start;
+    font-size: 4vw;
+    text-align: center;
+    padding: 5vw;
+    margin-top: 10vw;
+    background-color: palegreen;
+    border-radius: 25%;
+    color: white;
+  }
