@@ -172,6 +172,10 @@ a {
   .leaf {
     background-color: rgb(231, 158, 231);
     }
+
+    .leaf :hover{
+      color: green;
+    }
     
   .black {
     background-color: rgb(101, 101, 101);
