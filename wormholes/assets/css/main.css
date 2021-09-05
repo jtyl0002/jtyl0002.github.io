@@ -334,6 +334,7 @@ a {
   .left {
     width: 50vw;
     background-color: black;
+    color: white;
     font-family: start;
     font-size: 10vw;
     text-align: center;
