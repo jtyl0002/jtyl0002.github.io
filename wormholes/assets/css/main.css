@@ -173,8 +173,21 @@ a {
     background-color: rgb(231, 158, 231);
     }
 
-    .leaf :hover{
-      color: green;
+    .walk {
+      font-family: start;
+      font-size: 5vw;
+      text-align: center;
+      margin-top: -22vw;
+      opacity: 0;
+    }
+
+    .walk a {
+      text-decoration: none;
+      color: palegreen;
+    }
+
+    .walk:hover {
+      opacity: 100%;
     }
     
   .black {
@@ -255,9 +268,9 @@ a {
     overflow: scroll;
     color: rgb(231, 158, 231);
     font-size: 1vw;
-    padding: 3vw;
+    padding: 2vw;
     border-top: solid white 3vw;
-    line-height: 1.6;
+    line-height: 2.2;
   }
 
   .poem em {
@@ -302,7 +315,7 @@ a {
 }
 
 .web img{
-  width: 90%;
+  width: 100%;
 }
 
 .diamond {
@@ -320,7 +333,8 @@ a {
   font-size: 1vw;
   border-left: dashed 1vw rgb(212, 94, 94);
   padding: 2vw;
-  line-height: 1.3;
+  line-height: 1.8;
+
   }
 
   .ready {
@@ -397,4 +411,24 @@ a {
   .left a {
     text-decoration: none;
     color:white;
+  }
+
+  .mo {
+    font-family: start;
+    font-size: 1.3vw;
+    text-align: right;
+    margin-top: -3vw;
+    padding-right: 1vw;
+    color: rgb(130, 96, 66);
+  }
+
+  .factbee {
+    color:  rgb(130, 96, 66);
+    font-size: 5vw;
+    font-weight: 800;
+    padding: 2vw;
+    }
+  
+  .brown {
+    background-color: rgb(130, 96, 66);
   }
