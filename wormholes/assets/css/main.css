@@ -328,7 +328,8 @@ a {
     padding-top: 5vw;
     font-family: start;
     font-size: 5vw;
-    display: inline;
+    display: flex;
+    flex-wrap: nowrap;
     text-align: center;
   }
 
