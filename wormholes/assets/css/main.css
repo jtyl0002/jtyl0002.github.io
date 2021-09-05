@@ -322,3 +322,24 @@ a {
   padding: 2vw;
   line-height: 1.3;
   }
+
+  .ready {
+    font-family: start;
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .left {
+    background-color: black;
+    font-family: start;
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .right {
+    background-color: white;
+    font-family: start;
+    font-size: 10vw;
+    text-align: center;
+  }
+
