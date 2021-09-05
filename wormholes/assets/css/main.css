@@ -329,7 +329,7 @@ a {
     font-size: 5vw;
     text-align: center;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .left {
