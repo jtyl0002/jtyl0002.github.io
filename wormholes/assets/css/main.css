@@ -334,6 +334,8 @@ a {
   .box {
     display: flex;
     flex-wrap: nowrap;
+    height: 50vw;
+    padding: 5vw;
   }
 
   .left {
