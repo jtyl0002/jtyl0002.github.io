@@ -325,11 +325,13 @@ a {
 
   .ready {
     font-family: start;
-    font-size: 10vw;
+    font-size: 5vw;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .left {
+    width: 50%;
     background-color: black;
     font-family: start;
     font-size: 10vw;
@@ -337,6 +339,7 @@ a {
   }
 
   .right {
+    width: 50%;
     background-color: white;
     font-family: start;
     font-size: 10vw;
