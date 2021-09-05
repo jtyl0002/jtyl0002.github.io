@@ -328,10 +328,10 @@ a {
     font-family: start;
     font-size: 5vw;
     text-align: center;
-    flex-wrap: wrap;
   }
 
   .left {
+    
     width: 50vw;
     background-color: black;
     color: white;
