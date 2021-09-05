@@ -324,6 +324,7 @@ a {
   }
 
   .ready {
+    padding: 4vw;
     font-family: start;
     font-size: 5vw;
     text-align: center;
