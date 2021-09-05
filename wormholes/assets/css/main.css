@@ -331,7 +331,8 @@ a {
   }
 
   .left {
-    height: 50vw;
+    display: flex;
+    height: 40vw;
     width: 50vw;
     background-color: black;
     color: white;
@@ -342,7 +343,8 @@ a {
   }
 
   .right {
-    height: 50vw;
+    display: flex;
+    height: 40 vw;
     width: 50vw;
     background-color: white;
     font-family: start;
