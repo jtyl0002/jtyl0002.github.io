@@ -324,7 +324,7 @@ a {
   }
 
   .ready {
-    width: 100%;
+    width: 100vw;
     padding-top: 5vw;
     font-family: start;
     font-size: 5vw;
