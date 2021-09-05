@@ -324,12 +324,10 @@ a {
   }
 
   .ready {
-    width: 100vw;
+    width: 1000px;
     padding-top: 5vw;
     font-family: start;
     font-size: 5vw;
-    display: flex;
-    flex-wrap: nowrap;
     text-align: center;
   }
 
