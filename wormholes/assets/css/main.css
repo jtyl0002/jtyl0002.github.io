@@ -366,6 +366,7 @@ a {
   }
 
   .tryagain {
+    right:20vw;
     font-family: start;
     font-size: 2vw;
     text-align: center;
