@@ -366,16 +366,22 @@ a {
   }
 
   .tryagain {
-    align-content: center;
+    margin-left: 40vw;
+    margin-bottom: 20vw;
     font-family: start;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-align: center;
     padding: 2vw;
-    margin-top: 5vw;
     background-color: palegreen;
-    border-radius: 25%;
-    width: 20vw;
+    border-radius: 10vw;
+    width: 15vw;
     color: white;
+    box-shadow: 10px 10px grey;
+    transition: linear ease-in-out 2s;
+  }
+
+  .tryagain :hover {
+    color:rgb(229, 116, 174);
   }
 
   .tryagain a{
