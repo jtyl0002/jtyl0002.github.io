@@ -374,3 +374,7 @@ a {
     border-radius: 25%;
     color: white;
   }
+
+  .right a {
+    text-decoration: none;
+  }
