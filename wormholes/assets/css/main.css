@@ -332,6 +332,7 @@ a {
   }
 
   .box {
+    display: flex;
     flex-wrap: nowrap;
   }
 
