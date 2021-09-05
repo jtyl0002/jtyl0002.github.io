@@ -331,26 +331,22 @@ a {
   }
 
   .left {
-    height: 40vw;
-    width: 30vw;
+
     background-color: black;
     color: white;
     font-family: start;
     font-size: 10vw;
     text-align: center;
-    padding: 2vw;
-    line-height: 50vw;
+  
   }
 
   .right {
-    height: 40vw;
-    width: 30vw;
+
     background-color: white;
     font-family: start;
     font-size: 10vw;
     text-align: center;
-    padding: 2vw;
-    line-height: 50vw;
+
 
   }
 
