@@ -338,6 +338,7 @@ a {
     font-family: start;
     font-size: 10vw;
     text-align: center;
+    padding: 2vw;
   }
 
   .right {
@@ -346,5 +347,7 @@ a {
     font-family: start;
     font-size: 10vw;
     text-align: center;
+    padding: 2vw;
+
   }
 
