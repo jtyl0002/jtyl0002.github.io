@@ -332,7 +332,7 @@ a {
   }
 
   .left {
-    width: 50%;
+    width: 50vw;
     background-color: black;
     font-family: start;
     font-size: 10vw;
@@ -340,7 +340,7 @@ a {
   }
 
   .right {
-    width: 50%;
+    width: 50vw;
     background-color: white;
     font-family: start;
     font-size: 10vw;
