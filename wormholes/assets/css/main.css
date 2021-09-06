@@ -486,3 +486,38 @@ width: 70%;
 margin-left: 4vw;
 margin-top: 1vw;
   }
+
+  .darwin {
+    padding: 1vw;
+    color: rgb(212, 94, 94);
+    font-size: 2.2vw;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+
+  .darwin em {
+    font-size: 1.5vw;
+    color: rgb(212, 94, 94);
+  }
+
+  .enter {
+    font-family: start;
+    font-size: 6.3vw;
+    text-align: center;
+    margin-top: -26vw;
+    opacity: 0;
+
+  }
+
+  .enter a {
+    text-decoration: none;
+    color: rgb(5, 13, 37);
+  }
+
+  .enter:hover {
+    opacity: 100%;
+  }
+  
+
+ 
