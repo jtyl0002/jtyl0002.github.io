@@ -455,3 +455,34 @@ a {
   .chinese {
     margin-top: 7vw;
   }
+
+  .transcript {
+    padding: 2vw;
+    overflow: scroll;
+    color: rgb(130, 96, 66);
+    font-family: start;
+    font-size: 1.5vw;
+    text-align: left;
+    line-height: 2;
+  }
+
+  .transcript a {
+    text-decoration: none;
+    color: rgb(130, 96, 66);
+    text-align: right;
+  }
+
+  .honey img {
+  margin-left: 2vw;  
+  width: 80%;
+  }
+
+  .honey {
+  padding-left: 4vw;
+  }
+
+  .jelly img{
+width: 70%;
+margin-left: 4vw;
+margin-top: 1vw;
+  }
