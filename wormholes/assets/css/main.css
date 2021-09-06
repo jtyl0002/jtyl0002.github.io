@@ -518,6 +518,62 @@ margin-top: 1vw;
   .enter:hover {
     opacity: 100%;
   }
+
+  .purple {
+    background-color: rgb(88, 51, 153);
+  }
+
+  .religion img{
+    width: 65%;
+    margin-left: 5vw;
+  }
+
+  .money img{
+    margin-top: 8vw;
+  }
+
+  .cleopatra {
+    margin-left: -1vw;
+    margin-top: 1vw;
+    padding: 3vw;
+    font-family: start;
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(88, 51, 153) ;
+  }
+
+  .cleopatra a {
+    color: rgb(88, 51, 153) ;
+    text-decoration: none;
+    transition: 200ms;
+  }
+
+  .cleopatra a:hover {
+    color:rgb(223, 182, 78)
+  }
+
+  .cleo img{
+    background-color: rgb(223, 182, 78);
+    width: 100%;
+  }
+
+  .fist img {
+width: 80%;
+margin-top: -2vw;
+margin-left: 3vw;
+ }
+
+  .queenbee {
+    font-size: 1.8vw;
+    padding: 3vw;
+    color: rgb(88, 51, 153) ;
+    overflow: scroll;
+    line-height: 1.6;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   
 
  
