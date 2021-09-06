@@ -56,7 +56,7 @@ a {
   }
 
   .bee img {
-    margin-top: 2vw;
+    margin-top: 4vw;
   }
 
   .honeycomb img {
@@ -419,7 +419,7 @@ a {
     text-align: right;
     margin-top: -3vw;
     padding-right: 1vw;
-    color: rgb(130, 96, 66);
+    color: rgb(0, 0, 0);
   }
 
   .factbee {
@@ -431,4 +431,27 @@ a {
   
   .brown {
     background-color: rgb(130, 96, 66);
+  }
+
+  .bro {
+    color: white;
+    font-family: start;
+    text-align: right ;
+    padding-right: 12vw;
+    margin-top: -50vw;
+  }
+
+  .bro a {
+    text-decoration: none;
+    color: white;
+    mix-blend-mode: exclusion
+    ;
+  }
+
+  .fish {
+    padding-top: 4vw;
+  }
+
+  .chinese {
+    margin-top: 7vw;
   }
