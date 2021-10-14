@@ -1,0 +1,135 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+}
+
+a {
+	color:#ffc0cb;
+	font-weight: 900;
+}
+
+.map {
+	width: 2560px;
+	position: relative;
+	
+}
+
+.map img {
+	width: 400vh;
+	border: dashed rgb(123, 59, 37) 12px;
+}
+
+.compass {
+	position: fixed;
+	top: 2vh;
+	Right: 2vh;
+	border: none;
+}
+
+.compass img {
+	width: 20vh;
+}
+
+.face {
+	top: 55vh;
+	right: 192vh;
+	position: absolute;
+	cursor:pointer;
+}
+
+.face img {
+	width: 20vh;
+	z-index: 2;
+	border: none
+}
+
+.faceinfo {
+	width: 36vh;
+	position: absolute;
+	top: 45vh;
+	right: 189vh;
+	font-size: 2vh;
+	line-height: 1.4;
+	background-color: cadetblue;
+	color: white;
+	padding:10px;
+	opacity: 0;
+	transition: 750ms;
+}
+
+
+.facepic img {
+width: 33vh;
+border: none;
+}
+
+.faceinfo.open {
+	margin-right: -0;
+	transition: 750ms;
+	background-color: cadetblue;
+	opacity: 1;
+	z-index: 3;
+}
+
+.faceexit {
+	position: absolute;
+	right: 1vh;
+	top: 1vh;
+	cursor:pointer;
+}
+
+.faceexit img {
+	width: 4vh;
+}
+
+.frog {
+	top: 114.25vh;
+	right: 264vh;
+	position: absolute;
+	cursor:pointer;
+}
+
+.frog img {
+	width: 7vh;
+	z-index: 2;
+	border: none
+}
+
+.frogpic img{
+	width: 33vh;
+	border: none;
+	}
+
+.froginfo {
+	width: 36vh;
+	position: absolute;
+	top: 105vh;
+	right: 250vh;
+	font-size: 2vh;
+	line-height: 1.4;
+	background-color: cadetblue;
+	color: white;
+	padding:10px;
+	opacity: 0;
+	transition: 750ms;
+}
+
+.froginfo.open {
+	margin-right: -0;
+	transition: 750ms;
+	background-color: cadetblue;
+	opacity: 1;
+	z-index: 3;
+}
+
+.frogexit {
+	position: absolute;
+	right: 1vh;
+	top: 1vh;
+	cursor:pointer;
+}
+
+.frogexit img {
+	width: 4vh;
+	border: none;
+}
