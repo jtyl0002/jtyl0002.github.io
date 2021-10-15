@@ -133,3 +133,16 @@ border: none;
 	width: 4vh;
 	border: none;
 }
+
+.title {
+	color:rgb(123, 59, 37);
+	position: absolute;
+	top: 4vh;
+	left: 4vh;
+	font-size: 5vh;
+}
+
+.title em {
+	font-size: 7vh;
+	font-weight: 500vh;
+}
