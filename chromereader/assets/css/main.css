@@ -139,10 +139,12 @@ border: none;
 	position: absolute;
 	top: 4vh;
 	left: 4vh;
-	font-size: 5vh;
+	font-size: 4vh;
+	line-height: 0.4;
 }
 
 .title em {
-	font-size: 7vh;
+	line-height: 0.9;
+	font-size: 8vh;
 	font-weight: 500vh;
 }
