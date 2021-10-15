@@ -16,7 +16,7 @@ a {
 
 .map img {
 	width: 400vh;
-	border: dashed rgb(123, 59, 37) 12px;
+	border: dashed 2vh	#ffc0cb;
 }
 
 .compass {
@@ -24,6 +24,7 @@ a {
 	top: 2vh;
 	Right: 2vh;
 	border: none;
+	padding: 2vh;
 }
 
 .compass img {
@@ -135,7 +136,7 @@ border: none;
 }
 
 .title {
-	color:rgb(123, 59, 37);
+	color: white;
 	position: absolute;
 	top: 4vh;
 	left: 4vh;
