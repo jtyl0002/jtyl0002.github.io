@@ -1,31 +1,32 @@
 $(document).ready(function () {
-    console.log("ready");
-  
-    $(".face").click(function () {
-      $(".faceinfo").toggleClass("open");
-    });
-  });
+  console.log("ready");
 
-  $(document).ready(function () {
-    console.log("ready");
-  
-    $(".faceexit").click(function () {
-      $(".faceinfo").toggleClass("open");
-    });
+  $(".button").click(function () {
+    $(".menu").toggleClass("open");
   });
+});
 
-  $(document).ready(function () {
-    console.log("ready");
-  
-    $(".frog").click(function () {
-      $(".froginfo").toggleClass("open");
-    });
-  });
+$(document).ready(function () {
+  console.log("ready");
 
-  $(document).ready(function () {
-    console.log("ready");
-  
-    $(".frogexit").click(function () {
-      $(".froginfo").toggleClass("open");
-    });
+  $(".exitbutton").click(function () {
+    $(".menu").toggleClass("open");
   });
+});
+
+$(document).ready(function () {
+  console.log("ready");
+
+  $(".docklands").click(function () {
+    $(".dockinfo").toggleClass("open");
+  });
+});
+
+$(document).ready(function () {
+  console.log("ready");
+
+  $(".exitdock").click(function () {
+    $(".dockinfo").toggleClass("open");
+  });
+});
+

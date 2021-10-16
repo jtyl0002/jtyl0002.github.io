@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
+	background-color:#272525;
 }
 
 a {
@@ -9,133 +10,53 @@ a {
 }
 
 .map {
-	width: 2560px;
-	position: relative;
-	
+	position: absolute;
+	right: 0px;
+	bottom: 0vh;
+	z-index: 2;
+	opacity: 0.3;
+	transition: 250ms;
+	pointer-events: auto;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .map img {
-	width: 400vh;
-	border: dashed 2vh	#ffc0cb;
+	width: 28vw;
 }
 
-.compass {
+.map:hover {
+	z-index: 3;
+	opacity: 1;
+}
+
+.melbourne {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.melbourne img {
+width: 100vw;
+}
+
+.button {
 	position: fixed;
-	top: 2vh;
-	Right: 2vh;
+	top: 0px;
+	Right: 0px;
 	border: none;
-	padding: 2vh;
-}
-
-.compass img {
-	width: 20vh;
-}
-
-.face {
-	top: 55vh;
-	right: 192vh;
-	position: absolute;
-	cursor:pointer;
-}
-
-.face img {
-	width: 20vh;
-	z-index: 2;
-	border: none
-}
-
-.faceinfo {
-	width: 36vh;
-	position: absolute;
-	top: 45vh;
-	right: 189vh;
-	font-size: 2vh;
-	line-height: 1.4;
-	background-color: cadetblue;
-	color: white;
-	padding:10px;
-	opacity: 0;
-	transition: 750ms;
-}
-
-
-.facepic img {
-width: 33vh;
-border: none;
-}
-
-.faceinfo.open {
-	margin-right: -0;
-	transition: 750ms;
-	background-color: cadetblue;
-	opacity: 1;
 	z-index: 3;
+	padding: 2.5vw;
+	height: 20vh;
 }
 
-.faceexit {
-	position: absolute;
-	right: 1vh;
-	top: 1vh;
-	cursor:pointer;
-}
-
-.faceexit img {
-	width: 4vh;
-}
-
-.frog {
-	top: 114.25vh;
-	right: 264vh;
-	position: absolute;
-	cursor:pointer;
-}
-
-.frog img {
-	width: 7vh;
-	z-index: 2;
-	border: none
-}
-
-.frogpic img{
-	width: 33vh;
-	border: none;
-	}
-
-.froginfo {
-	width: 36vh;
-	position: absolute;
-	top: 105vh;
-	right: 250vh;
-	font-size: 2vh;
-	line-height: 1.4;
-	background-color: cadetblue;
-	color: white;
-	padding:10px;
-	opacity: 0;
-	transition: 750ms;
-}
-
-.froginfo.open {
-	margin-right: -0;
-	transition: 750ms;
-	background-color: cadetblue;
-	opacity: 1;
-	z-index: 3;
-}
-
-.frogexit {
-	position: absolute;
-	right: 1vh;
-	top: 1vh;
-	cursor:pointer;
-}
-
-.frogexit img {
-	width: 4vh;
-	border: none;
+.button img {
+	width: 5vw;
 }
 
 .title {
+	margin-top: 20vh;
 	color: white;
 	position: absolute;
 	top: 4vh;
@@ -147,5 +68,159 @@ border: none;
 .title em {
 	line-height: 0.9;
 	font-size: 8vh;
-	font-weight: 500vh;
 }
+
+.boxes {
+	display:flex;
+	flex-wrap:wrap;
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index: 2;
+  }
+  
+  .box {
+	border-right:1px solid white;
+	border-bottom:1px solid white;  
+	height:10vw;
+	width:10vw;
+	pointer-events:none;
+  }
+  
+  .box.black {
+   pointer-events:auto;
+   z-index: 3;
+   opacity: 0;
+  }
+  
+  .box.black:hover {
+	background-color: black;
+	opacity: 0.7;
+  }
+
+  .menu {
+	height: 100vh;
+	width: 33%;
+	background-color: white;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	margin-right: -40%;
+	padding: 20px;
+	box-shadow: -5px 0px 10px 2px rgb(0, 0, 0);
+	transition: 500ms;
+  }
+  
+  .menu.open {
+	margin-right: -0;
+	background-color:#272525;
+	z-index: 3;
+	width: 30vw;
+	transition: 500ms;
+  }
+
+  .exitbutton {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		border: none;
+		z-index: 3;
+		padding: 2.5vw;
+		cursor: pointer;
+	}
+	
+	.exitbutton img {
+		width: 5vw;
+	}
+  
+  .nav {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 2;
+  }
+  
+  .button {
+	cursor: pointer;
+  }
+
+  .docklands {
+	top: 16vw;
+	left:45vw;
+	position: absolute;
+	transition: 200ms;
+	z-index: 4;
+  }
+
+  .docklands img {
+	  width: 6vw;
+	  height: 6vw;
+	  border: white .5vw solid;
+	  border-radius: 100%;
+	  cursor: pointer;
+  }
+
+  .docklands:hover {	 
+	transition: 200ms;
+    transform: scale(1.5);
+}
+
+.about {
+	padding:2vw;
+	color: white;
+	font-size: 1vw;
+	margin-top: 18vh;
+	line-height: 1.4;
+}
+
+.dockinfo {
+	margin-top: -80.33vh;
+	margin-left: 50vw;
+	width: 19.95vw;
+	height:59.95vh;
+	position: relative;
+	background-color:#272525;
+	z-index: 2;
+	opacity: 0;
+	transition: 250ms;
+}
+
+.dockinfo.open{
+	opacity: 1;
+}
+
+.dockpic {
+	position: absolute;
+	z-index: 1;
+}
+
+.dockpic img{
+	padding: 1vw;
+	width: 20vw;
+}
+
+.text {
+	color: white;
+	margin-top: 11vw;
+	padding: 1vw;
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	overflow: scroll;
+	font-size: 1vw;
+	line-height: 1.4;
+}
+
+.exitdock {
+	position: absolute;
+	top: 0px;
+	right:0px;
+	z-index: 3;
+	transition: 250ms;
+	cursor:pointer
+}
+
+.exitdock img {
+	width:2vw;
+}
+
