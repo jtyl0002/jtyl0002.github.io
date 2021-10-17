@@ -306,3 +306,14 @@ width: 100vw;
 	font-size: 1vw;
 	line-height: 1.4;
 }
+
+.melbpin {
+	position: absolute;
+	right:4vw;
+	bottom:3vw;
+	width: 1vw;
+	height: 1vw;
+	background-color: white;
+	border-radius: 100%;
+	z-index: 3;
+}
