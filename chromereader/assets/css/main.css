@@ -317,3 +317,25 @@ width: 100vw;
 	border-radius: 100%;
 	z-index: 3;
 }
+
+.melb {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.melb.open {
+opacity: 1;
+pointer-events: auto;
+z-index: 3;
+}
+
+.oslopin {
+	position: absolute;
+	right:15vw;
+	bottom:12vw;
+	width: 1vw;
+	height: 1vw;
+	background-color: white;
+	border-radius: 100%;
+	z-index: 3;
+}

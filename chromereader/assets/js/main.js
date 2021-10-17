@@ -14,6 +14,7 @@ $(document).ready(function () {
   });
 });
 
+
 $(document).ready(function () {
   console.log("ready");
 
@@ -30,6 +31,7 @@ $(document).ready(function () {
   });
 });
 
+
 $(document).ready(function () {
   console.log("ready");
 
@@ -44,5 +46,14 @@ $(document).ready(function () {
   $(".exitoslo").click(function () {
     $(".osloinfo").toggleClass("open");
   });
+});
+
+
+$( document ).ready(function() {
+  console.log( "ready!" );
+});
+
+  $(".melbpin").click(function () {
+  $(".melb").toggleClass("open");
 });
 
