@@ -17,7 +17,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   console.log("ready");
 
-  $(".docklands").click(function () {
+  $(".docklandsicon").click(function () {
     $(".dockinfo").toggleClass("open");
   });
 });
@@ -27,6 +27,22 @@ $(document).ready(function () {
 
   $(".exitdock").click(function () {
     $(".dockinfo").toggleClass("open");
+  });
+});
+
+$(document).ready(function () {
+  console.log("ready");
+
+  $(".osloicon").click(function () {
+    $(".osloinfo").toggleClass("open");
+  });
+});
+
+$(document).ready(function () {
+  console.log("ready");
+
+  $(".exitoslo").click(function () {
+    $(".osloinfo").toggleClass("open");
   });
 });
 

@@ -144,7 +144,7 @@ width: 100vw;
 	cursor: pointer;
   }
 
-  .docklands {
+  .docklandsicon {
 	top: 16vw;
 	left:45vw;
 	position: absolute;
@@ -152,7 +152,7 @@ width: 100vw;
 	z-index: 4;
   }
 
-  .docklands img {
+  .docklandsicon img {
 	  width: 6vw;
 	  height: 6vw;
 	  border: white .5vw solid;
@@ -160,7 +160,7 @@ width: 100vw;
 	  cursor: pointer;
   }
 
-  .docklands:hover {	 
+  .docklandsicon:hover {	 
 	transition: 200ms;
     transform: scale(1.5);
 }
@@ -224,3 +224,85 @@ width: 100vw;
 	width:2vw;
 }
 
+.osloicon {
+	top: 10vw;
+	left:33vw;
+	position: absolute;
+	transition: 200ms;
+	z-index: 4;
+  }
+
+.osloicon img {
+	width: 6vw;
+	height: 6vw;
+	border: white .5vw solid;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.osloicon:hover {	 
+  transition: 200ms;
+  transform: scale(1.5);
+}
+
+.oslocity {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+}
+
+.oslocity img {
+width: 100vw;
+}
+
+.osloinfo {
+	margin-top: -60vh;
+	margin-left: 10vw;
+	width: 19.95vw;
+	height:59.95vh;
+	position: relative;
+	background-color:#272525;
+	z-index: 2;
+	opacity: 0;
+	transition: 250ms;
+}
+
+.osloinfo.open{
+	opacity: 1;
+}
+
+.oslorubble {
+	position: absolute;
+	z-index: 1;
+}
+
+.oslorubble img{
+	padding: 1vw;
+	width: 20vw;
+}
+
+.exitoslo {
+	position: absolute;
+	top: 0px;
+	right:0px;
+	z-index: 3;
+	transition: 250ms;
+	cursor:pointer
+}
+
+.exitoslo img {
+	width:2vw;
+}
+
+.oslotext {
+	color: white;
+	margin-top: 12vw;
+	padding: 1vw;
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	overflow: scroll;
+	font-size: 1vw;
+	line-height: 1.4;
+}
