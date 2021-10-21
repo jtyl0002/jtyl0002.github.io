@@ -54,6 +54,6 @@ $( document ).ready(function() {
 });
 
   $(".melbpin").click(function () {
-  $(".melb").toggleClass("open");
+  $(".wrapper").toggleClass("open");
 });
 

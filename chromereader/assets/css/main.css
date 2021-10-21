@@ -318,12 +318,12 @@ width: 100vw;
 	z-index: 3;
 }
 
-.melb {
+.wrapper {
 	opacity: 0;
 	pointer-events: none;
 }
 
-.melb.open {
+.wrapper.open {
 opacity: 1;
 pointer-events: auto;
 z-index: 3;
