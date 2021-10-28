@@ -439,6 +439,11 @@ strong {
     font-size: 22vh;
 }
 
+.menu em {
+	font-size: 2.5vw;
+	line-height: 1.1;	
+}
+
 .info em {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 2.5vw;
