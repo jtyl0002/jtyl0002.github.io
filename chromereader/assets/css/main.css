@@ -242,6 +242,7 @@ text-indent: 4vw;
 	border-radius: 100%;
 	box-shadow: 2px 2px 5px black;
 	transition: 200ms;
+	z-index: 32;
 	}
 
   .button:hover{
@@ -314,8 +315,22 @@ text-indent: 4vw;
 	transition: 500ms;
   }
 
+  .info.downleft {
+	position: relative;
+    left: -24vw;
+    top: -4vwt;
+	transition: 500ms;
+  }
+
   .close-down {
 	left: 28.7vw;
+    top: 2vw;
+	z-index: 34; 
+	cursor: pointer;
+}
+
+.close-downleft {
+    left: -5.3vw;
     top: 2vw;
 	z-index: 34; 
 	cursor: pointer;
@@ -325,7 +340,16 @@ text-indent: 4vw;
 	left: 48.7vw; 
 }
 
+.close-downleft.large {
+	left: 14.7vw; 
+	top:12
+}
+
 .info.down img {
+	width: 100%;
+}
+
+.info.downleft img {
 	width: 100%;
 }
   
@@ -389,6 +413,7 @@ text-indent: 4vw;
 
 	.large {
 		transition: 500ms;
+		font-size: 2vw;
 	}
 
 	.close-up {

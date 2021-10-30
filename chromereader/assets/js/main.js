@@ -70,6 +70,7 @@ $(document).ready(function () {
       $(".close-right").addClass("large");
       $(".close-up").addClass("large");
       $(".close-down").addClass("large");
+      $(".close-downleft").addClass("large");
     });
 
     $(".zoom-out").click(function () {
@@ -78,6 +79,7 @@ $(document).ready(function () {
       $(".close-right").removeClass("large");
       $(".close-down").removeClass("large");
       $(".close-up").removeClass("large");
+      $(".close-downleft").removeClass("large");
     });
 
     $(".person").click(function () {
