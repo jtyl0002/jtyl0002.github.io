@@ -6,11 +6,13 @@ body {
   }
   
   .open-menu {
+	width: 5vw;
+	height: 5vw;
 	position: fixed;
 	top: 2.5vw;
 	left: 2.5vw;
 	cursor: pointer;
-	z-index: 3;
+	z-index: 6;
 	box-shadow: 2px 2px 10px black;
 	border-radius: 100%;
 	transition: 200ms;
@@ -21,35 +23,35 @@ body {
   }
 
   .open-menu:hover {
-transform: scale(1.5);  }
+	transform: scale(1.5);  
+}
   
-  .map-link {
-	cursor: pointer;
-	border-bottom: white solid .1vw;
-	line-height: 2;
-	transition: 500ms;
-	height: 3vw;
+	.map-link {
+    cursor: pointer;
+    border-bottom: white solid 0.1vw;
+    transition: 500ms;
+    padding: 1vw;
 	vertical-align: middle;
-  }
+}
 
   .map-link:hover {
 	background-color: rgb(60, 60, 60);
 	transition: 500ms;
-	height: 5vw;
 	vertical-align: middle;
-	line-height: 2.5;
+	padding:1.5vw;
 	font-size: 2vw;
   }
   
   .menu.show {
 	margin-right: 0;
 	transition: 500ms;
+	z-index: 42;
   }
   
   .menu {
 	width: 30%;
 	height: 100vh;
-	background-color:darkgrey;
+	background-color:black;
 	border-left: solid white .1vw;
 	position: fixed;
 	top: 0px;
@@ -65,7 +67,7 @@ transform: scale(1.5);  }
 	}
 
   p {
-	height: 50vh;
+	height: 40.1vh;
     padding: 1vw;
 	overflow: scroll;
 	line-height: 1.3;
@@ -73,12 +75,17 @@ transform: scale(1.5);  }
 	border-bottom: solid white .1vw;
 }
 
-strong {
+.menu strong {
+	color: red;
+text-indent: 4vw;
+}
+
+.info strong {
     font-size: .8vw;
     display: block;
     line-height: 1.1;
     text-align: right;
-    font-family: monospace;
+	font-family: 'Nunito_Sans';	
     font-weight: bold;
 }
 
@@ -252,7 +259,7 @@ strong {
 	padding: 1vw;
 	transition: 500ms;
 	line-height: 1.4;
-	background-color:darkgrey;
+	background-color:black;
 	border: solid white .1vw;
 	font-family: 'Nunito_Sans';	
   }
@@ -261,7 +268,7 @@ strong {
 	transition: 500ms;
 	width: 40vw;
 	height: 60vh;
-	background-color:darkgrey;
+	background-color:black;
 	padding: 20px;
 	display: none;
 	overflow: scroll; 
@@ -287,7 +294,8 @@ strong {
   
   .info.left {
 	position: relative;
-	left: -25vw;
+	left: -20vw;
+	top: -14.5vw;
   }
 
   .info.left img {
@@ -296,8 +304,8 @@ strong {
 
   .info.up {
 	position: relative;
-	left: -25vw;
-	top: -10vw;
+	left: -22.25vw;
+	top: -17.75vw;
   }
 
   .info.down {
@@ -309,7 +317,7 @@ strong {
   .close-down {
 	left: 28.7vw;
     top: 2vw;
-	z-index: 4; 
+	z-index: 34; 
 	cursor: pointer;
 }
 
@@ -334,10 +342,11 @@ strong {
   .info {
 	  width: 20vw;
 	  height: 60vh;
-	  background-color:darkgrey;
+	  background-color:black;
 	  padding: 20px;
-		display: none;
-		overflow: scroll;
+	  display: none;
+	  overflow: scroll;
+	  z-index: 40;
   }
   
   .info.open {
@@ -351,16 +360,16 @@ strong {
 	height: 2.5vw;
 	padding: 0.2vw;
 	border: white solid .1vw;
-	background-color: darkgrey;
+	background-color: black;
   }
 
 
-  .close-left {
-    top: 1.5vw;
-    left: -6.5vw; 
-	z-index: 4; 
-	cursor: pointer;
-	}
+	.close-left {
+		top: -8.5vw;
+		left: -1.25vw;
+		z-index: 4; 
+		cursor: pointer;
+		}
 
 	.close-right {
 		top: -13.5vw;
@@ -369,31 +378,33 @@ strong {
 		cursor: pointer;
 		}
 
+	.close-left.large {
+		left: 18.6vw;
+		}
+
 	.close-right.large {
+		top: -13.75vw;
 		left: 48.75vw;
-	}
+		}
 
 	.large {
 		transition: 500ms;
 	}
 
 	.close-up {
-		top: -3.5vw;
-		left: -6.5vw; 
+		top: -11.5vw;
+		left: -3.5vw;
 		z-index: 4; 
 		cursor: pointer;
 	}
 
 	.close-up.large {
-		left: 13.5vw; 
-	}
-
-	.close-left.large {
-		left: 13.5vw; 
+		left: 16.5vw;
 	}
   
   .close.show {
 	display:block;
+	z-index: 41;
   }
 
   .close.show img {
@@ -415,7 +426,7 @@ strong {
     position:relative;
     top:0px;
     left:0px;
-	z-index: 2;
+	z-index: 100;
   }
   
   .gridlines {
@@ -449,8 +460,8 @@ strong {
 }
 
 .info em {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 3vw;
+	font-family: 'Nunito_Sans';	
+	font-size: 2vw;
 	line-height: 1.1;
 }
 
@@ -607,6 +618,31 @@ transition: 200ms;
 	transition: 1s;	
 }
 
+.person {
+	position:fixed;
+	bottom: 23vw;
+	left: -50vw;
+	cursor: pointer
+	;
+}
+
+.person img {
+	width: 1vw;
+	box-shadow: 0px 0px 10px black;
+	border-radius: .5vw .5vw .5vw .5vw;
+}
+
+.person.show {
+	bottom: 23vw;
+	left: 4vw;
+	transition: 1s;	
+}
+
+.person:hover {
+	transform: scale(1.5);
+	transition: 200ms;
+}
+
 .dot.aurora {
 	width: 1vw;
 	height: 1vw;
@@ -633,7 +669,6 @@ transition: 200ms;
 	font-size: .6vw;
 	border: white solid .1vw;
 	border-radius: 100%;
-	color: darkgrey;
 	text-align: center;
 	line-height: 1.4;
 	text-indent: 0px;
@@ -644,12 +679,39 @@ transition: 200ms;
 .credit:hover {
 	background-color: rgb(60, 60, 60);
 	transform: scale(2);
+	color: white;
 }
 
 .credit a {
 	text-decoration: none;
-	color: darkgrey;
+	color: black;
 	line-height: 1.4;
+}
+
+.credit a:hover {
+	color: white;
+}
+
+.streetview {
+display: none;
+}
+
+.streetview iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.streetview.show {
+	position: fixed;
+    bottom: 0vw;
+    left: 0vw;
+    z-index: 30;
+    width: 40vw;
+    height: 40vh;
+	border: solid white .1vw;
+	box-shadow: 0px 0px 10px black;
+	transition: 1s;
+	display: block;
 }
 
 

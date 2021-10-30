@@ -11,6 +11,7 @@ $(document).ready(function () {
       $(".zoom-in").addClass("show");
       $(".zoom-out").addClass("show");
       $(".scale").addClass("show");
+      $(".person").addClass("show");
       $(".author").addClass("hidden");
     });
   
@@ -77,6 +78,11 @@ $(document).ready(function () {
       $(".close-right").removeClass("large");
       $(".close-down").removeClass("large");
       $(".close-up").removeClass("large");
+    });
+
+    $(".person").click(function () {
+      $(".streetview").toggleClass("show");
+ 
     });
   });
   
