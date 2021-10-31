@@ -208,10 +208,10 @@ text-indent: 4vw;
 	width:5vw;
   }
   
-  .box.dubai {
+  .box.anomoly {
 	position: absolute;
-	left: 70vw;
-	top: 30vw;
+	left: 64vw;
+	top: 26vw;
   }
 
   .box.bunker {
@@ -370,15 +370,19 @@ text-indent: 4vw;
 .info.downleft img {
 	width: 100%;
 }
-  
-  .info.right {
-	position: relative;
-	top: -20vw;
-	left: 10vw;
-  }
 
-  .info.right img {
+.info.up img {
 	width: 100%;
+}
+
+.info.right {
+position: relative;
+top: -20vw;
+left: 10vw;
+}
+
+.info.right img {
+width: 100%;
 }
 
 .info.small {
@@ -675,7 +679,6 @@ transition: 200ms;
 	position: fixed;
 	bottom: 1vw;
 	left: 100vw;
-	cursor: pointer;
 }
 
 .scale img {
