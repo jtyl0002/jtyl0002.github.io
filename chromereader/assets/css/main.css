@@ -64,6 +64,7 @@ body {
   .menu em {
 	font-size: 3.5vw;
 	line-height: 1.2;	
+	font-family: 'Nunito_Sans_black';	
 	}
 
   p {
@@ -78,6 +79,8 @@ body {
 .menu strong {
 	color: turquoise;
 text-indent: 4vw;
+font-family: 'Nunito_Sans_black';	
+
 }
 
 .info strong {
@@ -522,6 +525,7 @@ width: 100%;
 .title em {
     line-height: 0.91;
     font-size: 11vw;
+	font-family: 'Nunito_Sans_black';	
 }
 
 .info em {
@@ -789,6 +793,11 @@ display: none;
 	background-color: black;
 	transition:200ms;
 	border: white .1vw solid;
+}
+
+.intro.hidden {
+	left:-51vw;
+	transition: 1.5s;
 }
 
 

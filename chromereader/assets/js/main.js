@@ -13,6 +13,7 @@ $(document).ready(function () {
       $(".scale").addClass("show");
       $(".person").addClass("show");
       $(".author").addClass("hidden");
+      $(".intro").addClass("hidden");
     });
   
     $(".map-link-oslo").click(function () {
