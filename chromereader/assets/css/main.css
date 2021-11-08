@@ -92,6 +92,11 @@ font-family: 'Nunito_Sans_black';
     font-weight: bold;
 }
 
+.info strong.large {
+	transition: 500ms;
+	font-size: 3vw;
+}
+
 @font-face {
 	font-family: 'Nunito_Sans';
 	src: url(fonts/NunitoSans-Light.otf);
@@ -294,6 +299,12 @@ font-family: 'Nunito_Sans_black';
 	font-size: 2vw;
 	line-height: 1.1;
 	color: skyblue;
+}
+
+.info.large strong {
+	font-size: 1.2vw;
+	line-height: 1.4;
+	transition: 500ms;
 }
 
   .box.oslo {

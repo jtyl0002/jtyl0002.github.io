@@ -66,6 +66,7 @@ $(document).ready(function () {
 
     $(".zoom-in").click(function () {
       $(".info").addClass("large");
+      $(".strong").addClass("large");
       $(".zoom-in").addClass("filled");
       $(".close-left").addClass("large");
       $(".close-right").addClass("large");
